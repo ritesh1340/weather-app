@@ -6,7 +6,7 @@ const geocode = require ( "./utils/geocode" ) ;
 const weatherDetails = require ( "./utils/weather-stack" ) ; 
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000 ; 
 
 const viewsPath = path.join( __dirname, '..', 'templates' , 'views' ) ; 
 const staticDirectoryPath = path.join ( __dirname , '..' , 'public' ) ; 
